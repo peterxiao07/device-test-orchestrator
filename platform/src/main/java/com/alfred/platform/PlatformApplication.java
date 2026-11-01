@@ -10,4 +10,6 @@ public class PlatformApplication {
         SpringApplication.run(PlatformApplication.class, args);
     }
 
+    // heath check url: http://localhost:8080/actuator/health
+
 }
