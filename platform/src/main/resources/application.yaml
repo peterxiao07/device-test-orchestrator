@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: device-test-platform
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/device_test
+    username: device_app
+    password: local_dev_password
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
